@@ -1,0 +1,25 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  // align-items: center;
+  text-align: center;
+  gap: calc(max(2rem, 2vw));
+  flex-wrap: wrap;
+
+  &-feature{
+    padding: calc(max(01rem, 0.5vw)) calc(max(.7rem, 1vw));
+    background-color: hsl(350, 100%, 88%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
+    flex: 1 0 calc(max(15rem, 30%));
+
+
+    &__icon{
+      font-size: calc(max(2vw, 2rem));
+      color: #3dfff5;
+    }
+
+    // .typo__heading-h2{}
+
+    // &__paragraph{}
+  }
+}

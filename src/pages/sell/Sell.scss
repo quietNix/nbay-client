@@ -1,0 +1,51 @@
+.sell {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-form {
+    align-self: flex-start;
+  background: white;
+  box-shadow: 5px 0px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.2rem;
+  position: relative;
+
+    &__input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000000;
+      padding: 0 0 0.2em 0;
+      font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.2);
+      font-weight: 500;
+
+      &::placeholder {
+        color: var(--color-grey-blue);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__btn{
+      align-self: flex-start;
+    }
+
+    &-img {
+      visibility: hidden;
+    }
+  }
+
+  &-main {
+    &__heading {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+  }
+}

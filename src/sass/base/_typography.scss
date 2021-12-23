@@ -1,0 +1,115 @@
+html {
+  font-size: clamp(9px, 1rem, 4vmax);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.typo__heading-h1 { //24px
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 2);
+  line-height: 2em;
+  color: var(--color-grey-blue-dark);
+  
+  font-weight: 600;
+
+  
+
+  &--white {
+    color: white;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.typo__heading-h2 { //18p
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.5);
+  line-height: 1.5em;
+  font-weight: 500;
+  color: white;
+
+  & a{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+      color: lawngreen;
+    }
+  }
+
+  &--dark {
+    font-weight: 600;
+    color: var(--color-grey-blue-dark);
+  }
+}
+
+.typo__heading-h3 { //14px
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.2);
+  line-height: 1em;
+  font-weight: 600;
+  color: var(--color-grey-blue-dark);
+  
+  &--white {
+    color: white;
+  }
+
+  &--dark {
+    font-weight: 500;
+    color: var(--color-grey);
+
+    & a {
+      color: var(--color-grey-dark);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--color-grey-dark);
+      padding-bottom: 2px;
+    }
+  }
+
+  &--greyDark {
+    color: var(--color-grey-dark);
+    font-weight: 600;
+    
+  }
+}
+
+.typo__heading-h4 { //12px
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 0.75);
+  line-height: 1.2rem;
+
+  &--light {
+    font-weight: 400;
+    color: var(--color-grey-blue-dark);
+
+    & a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--color-blue);
+    }
+  }
+}
+
+.typo__heading-h5 { //10px
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 0.625);
+  line-height: 1rem;
+
+  & a {
+    text-decoration: none;
+    color: var(--color-blue);
+  }
+}
+//u can scale text and margin and padding based on font--size using em, and that font
+//size can be decided using clamp,
+//but once the screen goes beyond the certain required size, the text wont sale
+//as intended, so max-width: 8k set font size: 2rem or so.
+
+.typo__paragraph {
+  font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1.2);
+  line-height: 1.4em;
+  // font-weight: 600;
+  color: hsl(0, 0%, 99%);
+}

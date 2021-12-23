@@ -1,0 +1,10 @@
+.main {
+  background-color: pink;
+  padding: calc(max(1rem, 1vw));
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  z-index: 10;
+}

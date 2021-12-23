@@ -1,0 +1,44 @@
+@import "../../sass/abstract/mixins";
+
+.item{
+    background-color: aqua;
+    padding: calc(max(1.5vw, 1.5rem));
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
+    text-decoration: none;
+    color: navy;
+    transition: all .1s;
+    text-align: center;
+    flex: 1 0 max-content;
+
+    & >*:not(h1){
+        font-weight: 600;
+        font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1);
+    }
+
+    &-category{
+        color: rgb(209, 209, 30);
+    }
+    &-price{
+        color:orangered;
+    }
+    &-seller, &-createdAt{
+        color: rgb(17, 0, 255);
+    }
+    &-purchaser, &-purchasedAt{
+        color:hsl(180, 100%, 21%)
+    }
+}
+
+.item:hover{
+    background-color: hsl(180, 100%, 47%);
+}
+
+@include respond(phone){
+    .item{
+        flex: 0 0 100%;
+    }
+}

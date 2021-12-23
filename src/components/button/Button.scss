@@ -1,0 +1,14 @@
+.btn__primary {
+  padding: 0.2em 1em;
+  background: hsl(32, 100%, 70%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .2);
+  border: none;
+  border-radius: 0.3em;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+  background: hsl(32, 90%, 65%);
+  transform: translate(0, -0.1em);
+  }
+}

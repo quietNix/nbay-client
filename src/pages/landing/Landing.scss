@@ -1,0 +1,22 @@
+@import "../../sass/abstract/mixins";
+
+.container {
+  padding: 3% 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 2vh;
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@include respond(tab-land){
+  .container{
+    padding: 3% 6%;
+  }
+}
