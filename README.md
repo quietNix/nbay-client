@@ -1,4 +1,4 @@
-# Notes Taking App.
+# Nbay
 
 
 An ebay/olx inspired website (client), utilising power of react, hooks, sass, axios, & react best practices.

@@ -45,6 +45,7 @@ function Home (){
                             seller={item.seller.name}
                             price={item.price}
                             purchaser="You"
+                            photo={item.photo}
                             created_at={((currTime - new Date(item.created_at).getTime()) / (1000 * 60 * 60 * 24)).toFixed(1)}
                             purchased_at={((currTime - new Date(item.purchased_at).getTime()) / (1000 * 60 * 60 * 24)).toFixed(1)}
                         />

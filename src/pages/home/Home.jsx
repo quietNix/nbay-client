@@ -64,6 +64,7 @@ function Home() {
                             created_at={((currTime - new Date(item.created_at).getTime())/(1000*60*60*24)).toFixed(2)}
                             handlePurchase={handlePurchase}
                             message={message}
+                            photo={item.photo}
                         >
                             {item.seller._id !== currentUser &&
                                 <Button

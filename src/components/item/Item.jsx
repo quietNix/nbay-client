@@ -5,6 +5,7 @@ function Item(props) {
     return (
         <div className="item" href="/#">
             {props.message && <h2>message</h2>}
+            {props.photo && <img className="item-photo" src={props.photo} alt="item" />}
             <h1 className="typo__heading-h1">{props.name}</h1>
             <p className="item-category">{"Category: " + props.category}</p>
             <p className="item-price">{"Price: " + props.price}</p>

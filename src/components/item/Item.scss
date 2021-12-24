@@ -12,11 +12,16 @@
     color: navy;
     transition: all .1s;
     text-align: center;
-    flex: 1 0 max-content;
+    flex: 0 0 max-content;
 
     & >*:not(h1){
         font-weight: 600;
         font-size: calc(max(0.7rem + 0.3vw, 0.3rem + 0.7vw) * 1);
+    }
+
+    &-photo{
+        width: calc(max(10rem, 10vw));
+        height: calc(max(10rem, 10vw));
     }
 
     &-category{
